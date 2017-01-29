@@ -9,12 +9,12 @@ ll Multiply(ll a,ll b,ll mod)
     if(b%2 == 0)
     {
         ll temp = Multiply(a,b/2,mod);
-        ret = (temp%mod+temp%mod)%mod;
+        ret = (temp+temp)%mod;
     }
     else
     {
         ll temp = Multiply(a,b/2,mod);
-        ret = (a%mod+temp%mod+temp%mod)%mod;
+        ret = (a+temp+temp)%mod;
     }
     return ret;
 }
