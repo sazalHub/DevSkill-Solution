@@ -17,11 +17,12 @@ ll csum[1000005][3];
 int main ()
 {
     ll cases,caseno=0,ans,cnt,pos,len,tpos,sum,tmp,tp;
-    string xx;
+    char xx[100005];
     scanf("%lld",&cases);
     while(cases--)
     {
-        cin>>xx;
+        getchar();
+        scanf("%s",xx);
 
         vc.clear();
         vc.push_back(data('a',0));
